@@ -19,12 +19,12 @@
                 ?>
 
 
-                <!----<ul>
+              
                   <li><a href="<?php echo site_url('/about-us')?>">About Us</a></li>
-                  <li><a href="#">Programs</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Campuses</a></li>
-                </ul>---->
+                  <li><a href="<?php echo site_url('/programs') ?>">Programs</a></li>
+                  <li><a href="<?php echo site_url('/events') ?>">Events</a></li>
+                  <li><a href="<?php echo site_url('/campuses') ?>">Campuses</a></li>
+                </ul>
               </nav>
             </div>
 
@@ -32,9 +32,7 @@
               <h3 class="headline headline--small">Learn</h3>
               <nav class="nav-list">
                 <ul>
-                  <li><a href="#">Legal</a></li>
                   <li><a href="<?php echo site_url('/privacy-policy')?>">Privacy</a></li>
-                  <li><a href="#">Careers</a></li>
                 </ul>
               </nav>
             </div>
@@ -45,25 +43,28 @@
             <nav>
               <ul class="min-list social-icons-list group">
                 <li>
-                  <a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="https://www.facebook.com" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                  <a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="https://www.twitter.com" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                  <a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                  <a href="https://www.youtube.com" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                  <a href="#" class="social-color-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  <a href="https://www.linkedin.com" class="social-color-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                  <a href="#" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href="https://www.instagram.com" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
       </div>
+      <div class = "site-footer_col-four">
+      <h3 >Note: This is not a real website for a school but just a part of a school project and will be here just temporarily<h3>
+        </div>
     </footer>
 
 

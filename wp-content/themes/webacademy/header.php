@@ -16,6 +16,8 @@
         <div class="site-header__menu group">
           <nav class="main-navigation">
            <ul>
+            <!-- Here, jumping into php and using a WP function to feetch the url , in this case about-us
+                  ALso and if statement is used and a class is prvided so that when a viewer is on the page, the color in the navbar gets higlighted -->
               <li <?php if(is_page('about-us') or wp_get_post_parent_id(0) == 5 ) echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/about-us')?>">About Us</a></li>
               <li <?php if(get_post_type()=='program') echo 'class ="current-menu-item"';  ?>><a href="<?php echo get_post_type_archive_link('program'); ?>">Programs</a></li>
               <li <?php if(get_post_type() == 'event' OR is_page('past-events')) echo 'class="current-menu-item"'; ?>><a href="<?php echo get_post_type_archive_link('event'); ?>">Events</a></li>

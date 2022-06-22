@@ -59,18 +59,18 @@ function university_files() {
   ));
 }
 
-add_action('wp_enqueue_scripts', 'university_files');
+add_action('wp_enqueue_scripts', 'university_files');// load scripts function
 
-function university_features(){
+function university_features(){ // a function is created to enable theme support 
 
-    add_theme_support('title-tag');
+    add_theme_support('title-tag');// this makes title display dynamic instead of hard coding 
     add_theme_support('post-thumbnails');
     add_image_size('professorLandscape', 400, 260, true);
     add_image_size('professorPortrait', 480, 650, true);
     add_image_size('pageBanner', 1500, 350, true);
 }
 
-add_action('after_setup_theme','university_features');
+add_action('after_setup_theme','university_features'); 
 
 function university_adjust_queries($query){
   if (!is_admin() AND is_post_type_archive('campus') AND $query->is_main_query()) {
