@@ -29,7 +29,7 @@ if(strstr($_SERVER['SERVER_NAME'], 'webacademy.local')){
 }else{
 	define( 'DB_NAME', 'sumitweb_dkwebacademy' );
 	define( 'DB_USER', 'sumitweb_dkwebacademy' );
-	define( 'DB_PASSWORD', 'sumitweb_dk' );
+	define( 'DB_PASSWORD', 'Campnou@123' );
 	define( 'DB_HOST', 'sumitweb.dk.mysql' );
 }
 
