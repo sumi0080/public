@@ -11,9 +11,11 @@
     <div class="container container--narrow page-section">
 
     <?php 
-        $theParent = wp_get_post_parent_id(get_the_ID());
-       if ($theParent) {   ?>
+    // this is controlling the main and subpage relationship 
+        $theParent = wp_get_post_parent_id(get_the_ID()); // function wp_get_post_parent_id will give ID no. for parent and  function get_the_ID fetches the ID of the current page , about us will not have any id as it is a prent and not a child page 
+       if ($theParent) { //this means if $theparent is true  ?> 
             <div class="metabox metabox--position-up metabox--with-home-link">
+              <!----function get_the_title will fetch the related page dynamically.  -->
         <p><a class="metabox__blog-home-link" href="<?php echo get_permalink($theParent); ?>"><i class="fa fa-home" aria-hidden="true"></i>Back to <?php echo get_the_title($theParent);?></a> <span class="metabox__main"><?php the_title();?></span>
         </p>
       </div>
@@ -23,6 +25,8 @@
 
      
     <?php 
+
+    //the following codelines are controlling the subpages in about us page . if it is hardcoded, all the pages will have same subpages which should be the case. 
     $testArray = get_pages(array(
         'child_of' => get_the_ID()
     ));
@@ -37,6 +41,7 @@
             } else{
                 $findChildrenOf = get_the_ID();
             }
+            //this function below calls every page in the website but this functions takes some arrays to control what should be viewed
             wp_list_pages(array(
                 'title_li' => NULL,
                 'child_of' => $findChildrenOf,
